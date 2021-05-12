@@ -51,6 +51,18 @@
     <ClInclude Include="body.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="walker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="walkerState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="finalStepState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="initialStepState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="point.cpp">
@@ -90,6 +102,18 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="body.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="walkerState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="walker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="finalStepState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="initialStepState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

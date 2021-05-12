@@ -140,6 +140,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="body.h" />
+    <ClInclude Include="finalStepState.h" />
+    <ClInclude Include="initialStepState.h" />
     <ClInclude Include="line0.h" />
     <ClInclude Include="line01.h" />
     <ClInclude Include="line02.h" />
@@ -151,9 +153,13 @@
     <ClInclude Include="line6.h" />
     <ClInclude Include="line7.h" />
     <ClInclude Include="point.h" />
+    <ClInclude Include="walker.h" />
+    <ClInclude Include="walkerState.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="body.cpp" />
+    <ClCompile Include="finalStepState.cpp" />
+    <ClCompile Include="initialStepState.cpp" />
     <ClCompile Include="line0.cpp" />
     <ClCompile Include="line01.cpp" />
     <ClCompile Include="line02.cpp" />
@@ -166,6 +172,8 @@
     <ClCompile Include="line7.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="point.cpp" />
+    <ClCompile Include="walker.cpp" />
+    <ClCompile Include="walkerState.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
