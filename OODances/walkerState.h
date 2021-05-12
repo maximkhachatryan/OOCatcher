@@ -12,7 +12,6 @@ public:
 	virtual void handle_substep3() = 0;
 	virtual void handle_substep4() = 0;
 	virtual void handle_substep5() = 0;
-	virtual void handle_substep6() = 0;
 
 	virtual ~walkerState() {
 	};
