@@ -22,20 +22,18 @@ public:
 
 	//Rotate body segments
 	void RotateLeftLeg(double ang) const;
-	void RotateLeftFoot(double ang) const;
-	void RotateRightFoot(double ang) const;
-	void RotateLeftHand(double ang) const;
-	void RotateRightHand(double ang) const;
-	void RotateBase(double ang) const;
-	void RotateNeck(double ang) const;
+	void RotateRightLeg(double ang) const;
+	void RotateLeftArm(double ang) const;
+	void RotateRightArm(double ang) const;
+	void RotateTorso(double ang) const;
 
 	//Collect body connecting disconnected line endpoints
-	void CollectByLeftFoot() const;
-	void CollectByRightFoot() const;
-	void CollectByLeftHand() const;
-	void CollectByRightHand() const;
-	void CollectByBase() const;
-	void CollectByNeck() const;
+	void CollectOnLeftFoot() const;
+	void CollectOnRightFoot() const;
+	void CollectOnLeftHand() const;
+	void CollectOnRightHand() const;
+	void CollectOnBase() const;
+	void CollectOnNeck() const;
 
 	void ShowOnConsole() const;
 

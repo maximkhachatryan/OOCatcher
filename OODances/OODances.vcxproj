@@ -140,8 +140,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="body.h" />
-    <ClInclude Include="finalStepState.h" />
-    <ClInclude Include="initialStepState.h" />
+    <ClInclude Include="step2_State.h" />
+    <ClInclude Include="step1_State.h" />
     <ClInclude Include="line0.h" />
     <ClInclude Include="line01.h" />
     <ClInclude Include="line02.h" />
@@ -158,8 +158,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="body.cpp" />
-    <ClCompile Include="finalStepState.cpp" />
-    <ClCompile Include="initialStepState.cpp" />
+    <ClCompile Include="step2_State.cpp" />
+    <ClCompile Include="step1_State.cpp" />
     <ClCompile Include="line0.cpp" />
     <ClCompile Include="line01.cpp" />
     <ClCompile Include="line02.cpp" />

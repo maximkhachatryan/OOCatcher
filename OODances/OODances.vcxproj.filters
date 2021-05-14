@@ -57,10 +57,10 @@
     <ClInclude Include="walkerState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="finalStepState.h">
+    <ClInclude Include="step1_State.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="initialStepState.h">
+    <ClInclude Include="step2_State.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -110,10 +110,10 @@
     <ClCompile Include="walker.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="finalStepState.cpp">
+    <ClCompile Include="step1_State.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="initialStepState.cpp">
+    <ClCompile Include="step2_State.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

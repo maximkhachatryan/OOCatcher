@@ -1,6 +1,5 @@
 #include "walkerState.h"
 
-void walkerState::set_walker(walker* walker)
+walkerState::~walkerState()
 {
-	this->_walker = walker;
 }

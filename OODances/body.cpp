@@ -13,6 +13,54 @@ void body::shift(double dx, double dy)
 	torso.shift(dx, dy);
 }
 
+void body::RotateLeftLeg(double ang) const
+{
+}
+
+void body::RotateRightLeg(double ang) const
+{
+}
+
+void body::RotateLeftArm(double ang) const
+{
+}
+
+void body::RotateRightArm(double ang) const
+{
+}
+
+void body::RotateTorso(double ang) const
+{
+}
+
+void body::CollectOnLeftFoot() const
+{
+}
+
+void body::CollectOnRightFoot() const
+{
+}
+
+void body::CollectOnLeftHand() const
+{
+}
+
+void body::CollectOnRightHand() const
+{
+}
+
+void body::CollectOnBase() const
+{
+}
+
+void body::CollectOnNeck() const
+{
+}
+
+void body::ShowOnConsole() const
+{
+}
+
 void body::rand_rotate()	// -0.1 to 0.1
 {
 	left_arm.rotate(2. * rand() / 327680. - 0.1);
