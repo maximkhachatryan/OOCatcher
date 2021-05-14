@@ -7,9 +7,12 @@ class walker;
 
 class walker {
 private:
-	body* _body;
+	body _body;
 	walkerState* _walkerState;
 public:
+	walker(body body, walkerState *walkerState);
+
+	body body();
 	void do_next_step();
 	bool try_to_catch();
 
