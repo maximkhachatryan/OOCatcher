@@ -29,13 +29,15 @@ public:
 	void RotateBase(double ang) const;
 	void RotateNeck(double ang) const;
 
-	//Collect body connecting disconnected line endpoints 
+	//Collect body connecting disconnected line endpoints
 	void CollectByLeftFoot() const;
 	void CollectByRightFoot() const;
 	void CollectByLeftHand() const;
 	void CollectByRightHand() const;
 	void CollectByBase() const;
 	void CollectByNeck() const;
+
+	void ShowOnConsole() const;
 
 private:
 	line0 left_leg, left_arm;
