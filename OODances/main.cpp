@@ -5,7 +5,9 @@
 
 int main()
 {
-	point *p = new point(0, 0), *q = new point(5, 5);
+
+
+	/*point *p = new point(0, 0), *q = new point(5, 5);
 	line5 seg5(*p, *q);
 	line4 seg4(*p, *q);
 
@@ -25,5 +27,5 @@ int main()
 	std::cout << &seg4 << std::endl;
 	std::cout << seg4.length() << " " << seg4.get_x() << " " << seg4.end_y() << " " << std::endl;
 
-	return 0;
+	return 0;*/
 }

@@ -12,6 +12,7 @@ private:
 public:
 	walker(body* body, walkerState *walkerState);
 
+	void set_state(walkerState* walkerState);
 	body* get_body();
 	void do_next_step();
 	bool try_to_catch();

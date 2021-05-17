@@ -7,17 +7,16 @@
 class body
 {
 public:
-	body(double length);
+	body();
 
-	point left_foot();
+
+	/*point left_foot();
 	point right_foot();
 	point left_hand();
 	point right_hand();
 	point base();
-	point neck();
+	point neck();*/
 
-	double get_line_size();
-	void rand_rotate();
 	void shift(double dx, double dy);
 
 	//Rotate body segments
@@ -35,7 +34,7 @@ public:
 	void CollectOnBase() const;
 	void CollectOnNeck() const;
 
-	void ShowOnConsole() const;
+	void ShowOnScreen() const;
 
 private:
 	line0 left_leg, left_arm;
