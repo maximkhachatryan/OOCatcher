@@ -8,9 +8,19 @@ body::body() : left_leg(0, 0, 0, -10), left_arm(0, 10, -10, 10),
 	right_leg.rotate(-acos(-1));
 }
 
-void body::shift(double dx, double dy)
+point body::left_foot()
 {
-	torso.shift(dx, dy);
+	return point(this->left_leg.int_end_x(), this->left_leg.int_end_y());
+}
+
+point body::neck()
+{
+	return point(this->torso.get_x(), this->left_leg.get_y());
+}
+
+double body::arm_size()
+{
+	return this->left_arm.length();
 }
 
 void body::RotateLeftLeg(double ang) const
@@ -33,27 +43,27 @@ void body::RotateTorso(double ang) const
 {
 }
 
-void body::CollectOnLeftFoot() const
+void body::CollectOnLeftFoot(point p) const
 {
 }
 
-void body::CollectOnRightFoot() const
+void body::CollectOnRightFoot(point p) const
 {
 }
 
-void body::CollectOnLeftHand() const
+void body::CollectOnLeftHand(point p) const
 {
 }
 
-void body::CollectOnRightHand() const
+void body::CollectOnRightHand(point p) const
 {
 }
 
-void body::CollectOnBase() const
+void body::CollectOnBase(point p) const
 {
 }
 
-void body::CollectOnNeck() const
+void body::CollectOnNeck(point p) const
 {
 }
 

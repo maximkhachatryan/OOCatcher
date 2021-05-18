@@ -9,13 +9,13 @@ class walker {
 private:
 	body* _body;
 	walkerState* _walkerState;
+	point _objectToCatch;
 public:
-	walker(body* body, walkerState *walkerState);
+	walker(body* body, walkerState *walkerState, point objectToCatch);
 
+	point ObjectToCatch();
 	void set_state(walkerState* walkerState);
 	body* get_body();
-	void do_next_step();
-	bool try_to_catch();
-
+	void go();
 	~walker();
 };

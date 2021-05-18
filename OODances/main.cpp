@@ -26,6 +26,6 @@ int main()
 	std::cout << seg5.length() << " " << seg5.get_x() << " " << seg5.end_y() << " " << std::endl;
 	std::cout << &seg4 << std::endl;
 	std::cout << seg4.length() << " " << seg4.get_x() << " " << seg4.end_y() << " " << std::endl;
-
-	return 0;*/
+	*/
+	return 0;
 }

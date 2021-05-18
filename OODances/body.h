@@ -10,14 +10,14 @@ public:
 	body();
 
 
-	/*point left_foot();
+	point left_foot();
 	point right_foot();
 	point left_hand();
 	point right_hand();
 	point base();
-	point neck();*/
+	point neck();
 
-	void shift(double dx, double dy);
+	double arm_size();
 
 	//Rotate body segments
 	void RotateLeftLeg(double ang) const;
@@ -27,12 +27,12 @@ public:
 	void RotateTorso(double ang) const;
 
 	//Collect body connecting disconnected line endpoints
-	void CollectOnLeftFoot() const;
-	void CollectOnRightFoot() const;
-	void CollectOnLeftHand() const;
-	void CollectOnRightHand() const;
-	void CollectOnBase() const;
-	void CollectOnNeck() const;
+	void CollectOnLeftFoot(point p) const;
+	void CollectOnRightFoot(point p) const;
+	void CollectOnLeftHand(point p) const;
+	void CollectOnRightHand(point p) const;
+	void CollectOnBase(point p) const;
+	void CollectOnNeck(point p) const;
 
 	void ShowOnScreen() const;
 

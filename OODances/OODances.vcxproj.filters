@@ -63,6 +63,12 @@
     <ClInclude Include="step2_State.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="catch_State.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rotateTorsoToCatch_State.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="point.cpp">
@@ -114,6 +120,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="step2_State.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="catch_State.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rotateTorsoToCatch_State.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -140,6 +140,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="body.h" />
+    <ClInclude Include="catch_State.h" />
+    <ClInclude Include="rotateTorsoToCatch_State.h" />
     <ClInclude Include="step2_State.h" />
     <ClInclude Include="step1_State.h" />
     <ClInclude Include="line0.h" />
@@ -158,6 +160,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="body.cpp" />
+    <ClCompile Include="catch_State.cpp" />
+    <ClCompile Include="rotateTorsoToCatch_State.cpp" />
     <ClCompile Include="step2_State.cpp" />
     <ClCompile Include="step1_State.cpp" />
     <ClCompile Include="line0.cpp" />
