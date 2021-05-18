@@ -11,5 +11,5 @@ void step2_State::handle_step(walker* walker)
 	walker->get_body()->RotateRightArm(-45);
 	walker->get_body()->RotateTorso(-45);
 	walker->get_body()->CollectOnLeftFoot(left_foot);
-	walker->set_state(new catch_State(nullptr));
+	walker->set_state(new catch_State(nullptr));//TODO: Create and pass next state object instead of nullptr
 }
