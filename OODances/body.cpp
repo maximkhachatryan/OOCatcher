@@ -13,9 +13,29 @@ point body::left_foot()
 	return point(this->left_leg.int_end_x(), this->left_leg.int_end_y());
 }
 
+point body::right_foot()
+{
+	return point(this->right_leg.int_end_x(), this->right_leg.int_end_y());
+}
+
+point body::left_hand()
+{
+	return point(this->left_arm.int_end_x(), this->left_arm.int_end_y());
+}
+
+point body::right_hand()
+{
+	return point(this->right_arm.int_end_x(), this->right_arm.int_end_y());
+}
+
+point body::base()
+{
+	return point(this->torso.int_end_x(), this->left_leg.int_end_y());
+}
+
 point body::neck()
 {
-	return point(this->torso.get_x(), this->left_leg.get_y());
+	return point(this->torso.int_x(), this->left_leg.int_y());
 }
 
 double body::arm_size()
