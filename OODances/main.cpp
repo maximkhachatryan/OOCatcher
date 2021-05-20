@@ -2,9 +2,15 @@
 #include "line4.h"
 #include "line5.h"
 #include <iostream>
+#include "walker.h"
+#include "catch_State.h"
+#include "step1_State.h"
 
 int main()
 {
+	point objectToCatch = point(100, 10);
+	walker* walkingPerson = new walker(new body(), new catch_State(new step1_State()), objectToCatch);
+	walkingPerson->go();
 
 
 	/*point *p = new point(0, 0), *q = new point(5, 5);

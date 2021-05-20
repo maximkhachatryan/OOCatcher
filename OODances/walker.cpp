@@ -24,7 +24,8 @@ body* walker::get_body()
 
 void walker::go()
 {
-	this->_walkerState->handle_step(this);
+	while (this->_walkerState != nullptr)
+		this->_walkerState->handle_step(this);
 }
 
 

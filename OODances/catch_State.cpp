@@ -11,8 +11,9 @@ void catch_State::handle_step(walker* walker)
 {
 	body* body = walker->get_body();
 	double dist = body->neck().dist(walker->ObjectToCatch());
-	if (dist - body->arm_size() < 1) {// If can catch
-		walker->set_state(new rotateTorsoToCatch_State());
+	if (dist - body->arm_size() < 1) {// can catch
+		//TODO: Rotate arms to catch the object
+		walker->set_state(nullptr);
 	}
 	else if (dist < body->arm_size()) {
 		walker->set_state(new rotateTorsoToCatch_State());
