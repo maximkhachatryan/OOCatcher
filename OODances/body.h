@@ -8,7 +8,14 @@ class body
 {
 public:
 	body();
+	body(const body& that);
+	~body();
 
+	void set_left_leg(abstractLine *line);
+	void set_left_arm(abstractLine *line);
+	void set_right_leg(abstractLine *line);
+	void set_right_arm(abstractLine *line);
+	void set_torso(abstractLine *line);
 
 	point left_foot();
 	point right_foot();
@@ -35,9 +42,8 @@ public:
 	void CollectOnNeck(point p) const;
 
 	void ShowOnScreen() const;
-
 private:
-	line0 left_leg, left_arm;
-	line6 right_leg, right_arm;
-	line4 torso;
+	abstractLine *left_leg, *left_arm;
+	abstractLine *right_leg, *right_arm;
+	abstractLine *torso;
 };
