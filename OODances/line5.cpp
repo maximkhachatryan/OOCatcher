@@ -14,8 +14,8 @@ line5::line5(point& fresh_start, point& fresh_end)
 
 line5::line5(const line5 &that)
 {
-	start_ptr = new point(that.get_x(), that.get_y());
-	end_ptr = new point(that.end_x(), that.end_y());
+	start_ptr = new point(that.start_ptr->get_x(), that.start_ptr->get_y());
+	end_ptr = new point(that.end_ptr->get_x(), that.end_ptr->get_y());
 }
 
 line5::~line5()
@@ -27,52 +27,52 @@ line5::~line5()
 	end_ptr = nullptr;
 }
 
-double line5::get_x() const
+double line5::get_x()
 {
 	return start_ptr->get_x();
 }
 
-double line5::get_y() const
+double line5::get_y()
 {
 	return start_ptr->get_y();
 }
 
-int line5::int_x() const
+int line5::int_x()
 {
 	return start_ptr->int_x();
 }
 
-int line5::int_y() const
+int line5::int_y()
 {
 	return start_ptr->int_y();
 }
 
-double line5::end_x() const
+double line5::end_x()
 {
 	return end_ptr->get_x();
 }
 
-double line5::end_y() const
+double line5::end_y()
 {
 	return end_ptr->get_y();
 }
 
-int line5::int_end_x() const
+int line5::int_end_x()
 {
 	return end_ptr->int_x();
 }
 
-int line5::int_end_y() const
+int line5::int_end_y()
 {
 	return end_ptr->int_y();
 }
 
-double line5::length() const
+double line5::length()
 {
 	return start_ptr->dist(*end_ptr);
 }
 
-double line5::dir() const
+double line5::dir()
 {
 	return start_ptr->dir(*end_ptr);
 }

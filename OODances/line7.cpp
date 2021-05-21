@@ -28,54 +28,54 @@ line7::~line7()
 	start_ptr = nullptr;
 }
 
-double line7::get_x() const
+double line7::get_x()
 {
 	return start_ptr->get_x();
 }
 
-double line7::get_y() const
+double line7::get_y()
 {
 	return start_ptr->get_y();
 }
 
-int line7::int_x() const
+int line7::int_x()
 {
 	return start_ptr->int_x();
 }
 
-int line7::int_y() const
+int line7::int_y()
 {
 	return start_ptr->int_y();
 }
 
-double line7::end_x() const
+double line7::end_x()
 {
 	return start_ptr->get_x() + len * cos(ang);
 }
 
-double line7::end_y() const
+double line7::end_y()
 {
 	return start_ptr->get_y() + len * sin(ang);
 }
 
-int line7::int_end_x() const
+int line7::int_end_x()
 {
 	point end(end_x(), 0);
 	return end.int_x();
 }
 
-int line7::int_end_y() const
+int line7::int_end_y()
 {
 	point end(0, end_y());
 	return end.int_y();
 }
 
-double line7::length() const
+double line7::length()
 {
 	return len;
 }
 
-double line7::dir() const
+double line7::dir()
 {
 	return ang;
 }

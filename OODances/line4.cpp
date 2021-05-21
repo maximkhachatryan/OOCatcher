@@ -6,52 +6,52 @@ line4::line4(point &fresh_start, point &fresh_end)
 	end_ptr = &fresh_end;
 }
 
-double line4::get_x() const
+double line4::get_x()
 {
 	return start_ptr->get_x();
 }
 
-double line4::get_y() const
+double line4::get_y()
 {
 	return start_ptr->get_y();
 }
 
-int line4::int_x() const
+int line4::int_x()
 {
 	return start_ptr->int_x();
 }
 
-int line4::int_y() const
+int line4::int_y()
 {
 	return start_ptr->int_y();
 }
 
-double line4::end_x() const
+double line4::end_x()
 {
 	return end_ptr->get_x();
 }
 
-double line4::end_y() const
+double line4::end_y()
 {
 	return end_ptr->get_y();
 }
 
-int line4::int_end_x() const
+int line4::int_end_x()
 {
 	return end_ptr->int_x();
 }
 
-int line4::int_end_y() const
+int line4::int_end_y()
 {
 	return end_ptr->int_y();
 }
 
-double line4::length() const
+double line4::length()
 {
 	return start_ptr->dist(*end_ptr);
 }
 
-double line4::dir() const
+double line4::dir()
 {
 	return start_ptr->dir(*end_ptr);
 }

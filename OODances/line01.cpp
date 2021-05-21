@@ -19,54 +19,54 @@ line01::line01(point &fresh_start, point &fresh_end)
 	ang = fresh_start.dir(fresh_end);
 }
 
-double line01::get_x() const
+double line01::get_x()
 {
 	return x;
 }
 
-double line01::get_y() const
+double line01::get_y()
 {
 	return y;
 }
 
-int line01::int_x() const
+int line01::int_x()
 {
 	return x + (x > 0 ? 0.5 : -0.5);
 }
 
-int line01::int_y() const
+int line01::int_y()
 {
 	return y + (y > 0 ? 0.5 : -0.5);
 }
 
-double line01::end_x() const
+double line01::end_x()
 {
 	return x + len * cos(ang);
 }
 
-double line01::end_y() const
+double line01::end_y()
 {
 	return y + len * sin(ang);
 }
 
-int line01::int_end_x() const
+int line01::int_end_x()
 {
 	double x1 = end_x();
 	return x1 + (x1 > 0 ? 0.5 : -0.5);
 }
 
-int line01::int_end_y() const
+int line01::int_end_y()
 {
 	double y1 = end_y();
 	return y1 + (y1 > 0 ? 0.5 : -0.5);
 }
 
-double line01::length() const
+double line01::length()
 {
 	return len;
 }
 
-double line01::dir() const
+double line01::dir()
 {
 	return ang;
 }

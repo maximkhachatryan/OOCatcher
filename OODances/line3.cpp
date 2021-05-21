@@ -13,52 +13,52 @@ line3::line3(point &fresh_start, point &fresh_end)
 }
 
 
-double line3::get_x() const
+double line3::get_x()
 {
 	return ends[0].get_x();
 }
 
-double line3::get_y() const
+double line3::get_y()
 {
 	return ends[0].get_y();
 }
 
-int line3::int_x() const
+int line3::int_x()
 {
 	return ends[0].int_x();
 }
 
-int line3::int_y() const
+int line3::int_y()
 {
 	return ends[0].int_y();
 }
 
-double line3::end_x() const
+double line3::end_x()
 {
 	return ends[1].get_x();
 }
 
-double line3::end_y() const
+double line3::end_y()
 {
 	return ends[1].get_y();
 }
 
-int line3::int_end_x() const
+int line3::int_end_x()
 {
 	return ends[1].int_x();
 }
 
-int line3::int_end_y() const
+int line3::int_end_y()
 {
 	return ends[1].int_y();
 }
 
-double line3::length() const
+double line3::length()
 {
 	return ends[0].dist(ends[1]);
 }
 
-double line3::dir() const
+double line3::dir()
 {
 	return ends[0].dir(ends[1]);
 }

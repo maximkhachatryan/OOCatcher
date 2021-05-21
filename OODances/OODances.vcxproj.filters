@@ -72,6 +72,9 @@
     <ClInclude Include="step3_State.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="abstractLine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="point.cpp">
@@ -132,6 +135,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="step3_State.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="abstractLine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

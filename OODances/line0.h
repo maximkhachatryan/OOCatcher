@@ -1,5 +1,6 @@
 #pragma once
 #include "point.h"
+#include "abstractLine.h"
 
 class line0 : public point
 {

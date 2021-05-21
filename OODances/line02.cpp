@@ -16,52 +16,52 @@ line02::line02(point &fresh_start, point &fresh_end)
 	y1 = fresh_end.get_y();
 }
 
-double line02::get_x() const
+double line02::get_x()
 {
 	return x;
 }
 
-double line02::get_y() const
+double line02::get_y()
 {
 	return y;
 }
 
-int line02::int_x() const
+int line02::int_x()
 {
 	return x + (x > 0 ? 0.5 : -0.5);
 }
 
-int line02::int_y() const
+int line02::int_y()
 {
 	return y + (y > 0 ? 0.5 : -0.5);
 }
 
-double line02::end_x() const
+double line02::end_x()
 {
 	return x1;
 }
 
-double line02::end_y() const
+double line02::end_y()
 {
 	return y1;
 }
 
-int line02::int_end_x() const
+int line02::int_end_x()
 {
 	return x1 + (x1 > 0 ? 0.5 : -0.5);
 }
 
-int line02::int_end_y() const
+int line02::int_end_y()
 {
 	return y1 + (y1 > 0 ? 0.5 : -0.5);
 }
 
-double line02::length() const
+double line02::length()
 {
 	return sqrt((x - x1) * (x - x1) + (y - y1) * (y - y1));
 }
 
-double line02::dir() const
+double line02::dir()
 {
 	return atan2(y1 - y, x1 - x);
 }
