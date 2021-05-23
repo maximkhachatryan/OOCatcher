@@ -142,6 +142,7 @@
     <ClInclude Include="abstractLine.h" />
     <ClInclude Include="body.h" />
     <ClInclude Include="body_builder.h" />
+    <ClInclude Include="body_director.h" />
     <ClInclude Include="catch_State.h" />
     <ClInclude Include="rotateTorsoToCatch_State.h" />
     <ClInclude Include="simple_body_builder.h" />
@@ -166,6 +167,7 @@
     <ClCompile Include="abstractLine.cpp" />
     <ClCompile Include="body.cpp" />
     <ClCompile Include="body_builder.cpp" />
+    <ClCompile Include="body_director.cpp" />
     <ClCompile Include="catch_State.cpp" />
     <ClCompile Include="rotateTorsoToCatch_State.cpp" />
     <ClCompile Include="simple_body_builder.cpp" />

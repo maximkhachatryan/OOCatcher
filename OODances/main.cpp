@@ -5,11 +5,18 @@
 #include "walker.h"
 #include "catch_State.h"
 #include "step1_State.h"
+#include "body_director.h"
+#include "simple_body_builder.h"
 
 int main()
 {
 	point objectToCatch = point(100, 10);
-	walker* walkingPerson = new walker(new body(), new catch_State(new step1_State()), objectToCatch);
+	body_director director;
+	simple_body_builder* builder = new simple_body_builder();
+	director.set_builder(builder);
+	director.create_full_body();
+	body* walker_body = builder->get_body();
+	walker* walkingPerson = new walker(walker_body, new catch_State(new step1_State()), objectToCatch);
 	walkingPerson->go();
 
 

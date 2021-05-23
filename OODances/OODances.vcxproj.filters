@@ -81,6 +81,9 @@
     <ClInclude Include="simple_body_builder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="body_director.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="point.cpp">
@@ -150,6 +153,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="simple_body_builder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="body_director.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
