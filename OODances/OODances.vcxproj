@@ -144,6 +144,7 @@
     <ClInclude Include="body_builder.h" />
     <ClInclude Include="catch_State.h" />
     <ClInclude Include="rotateTorsoToCatch_State.h" />
+    <ClInclude Include="simple_body_builder.h" />
     <ClInclude Include="step2_State.h" />
     <ClInclude Include="step1_State.h" />
     <ClInclude Include="line0.h" />
@@ -167,6 +168,7 @@
     <ClCompile Include="body_builder.cpp" />
     <ClCompile Include="catch_State.cpp" />
     <ClCompile Include="rotateTorsoToCatch_State.cpp" />
+    <ClCompile Include="simple_body_builder.cpp" />
     <ClCompile Include="step2_State.cpp" />
     <ClCompile Include="step1_State.cpp" />
     <ClCompile Include="line0.cpp" />
