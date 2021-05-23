@@ -19,5 +19,7 @@ public:
     void build_torso() const override;
 
     void Reset();
+
+    body* get_body();
 };
 
