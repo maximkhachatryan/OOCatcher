@@ -13,35 +13,60 @@ line0::line0(point &fresh_start, point &fresh_end) : point(fresh_start)
 	ang = point::dir(fresh_end);
 }
 
+double line0::get_x()
+{
+	return point::get_x();
+}
 
-double line0::end_x() const
+double line0::get_y()
+{
+	return point::get_y();
+}
+
+int line0::int_x()
+{
+	return point::int_x();
+}
+
+int line0::int_y()
+{
+	return point::int_y();
+}
+
+void line0::shift(double dx, double dy)
+{
+	return point::shift(dx, dy);
+}
+
+
+double line0::end_x()
 {
 	return x + len * cos(ang);
 }
 
-double line0::end_y() const
+double line0::end_y()
 {
 	return y + len * sin(ang);
 }
 
-int line0::int_end_x() const
+int line0::int_end_x()
 {
 	point end(end_x(), 0);
 	return end.int_x();
 }
 
-int line0::int_end_y() const
+int line0::int_end_y()
 {
 	point end(0, end_y());
 	return end.int_y();
 }
 
-double line0::length() const
+double line0::length()
 {
 	return len;
 }
 
-double line0::dir() const
+double line0::dir()
 {
 	return ang;
 }
